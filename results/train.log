@@ -1,0 +1,85 @@
+/nethome/zzhao488/anaconda3/envs/leo/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/nethome/zzhao488/anaconda3/envs/leo/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+<<< Training & Evaluating (frt) >>>
+Initial valid loss (overall): 0.706
+Initial valid loss Card: 0.753
+Initial valid loss Edem: 0.701
+Initial valid loss Cons: 0.695
+Initial valid loss Atel: 0.738
+Initial valid loss PlEf: 0.645
+
+[Batch:  1000] loss: 29.017
+[Batch:  2000] loss: 56.406
+Epoch 1 [IMPR] lossv Card = 0.811
+Epoch 1 [IMPR] lossv Edem = 0.340
+Epoch 1 [IMPR] lossv Cons = 0.411
+Epoch 1 [IMPR] lossv Atel = 0.565
+Epoch 1 [IMPR] lossv PlEf = 0.383
+Epoch 1 [IMPR] loss = 0.502
+Training loss: 0.433, Valid loss: 0.502
+[Batch:  1000] loss: 26.352
+[Batch:  2000] loss: 52.550
+Epoch 2 [IMPR] lossv Card = 0.741
+Epoch 2 [IMPR] lossv Edem = 0.315
+Epoch 2 [----] lossv Cons = 0.416
+Epoch 2 [IMPR] lossv Atel = 0.526
+Epoch 2 [IMPR] lossv PlEf = 0.382
+Epoch 2 [IMPR] loss = 0.476
+Training loss: 0.410, Valid loss: 0.476
+[Batch:  1000] loss: 25.703
+[Batch:  2000] loss: 51.339
+Epoch 3 [----] lossv Card = 0.828
+Epoch 3 [----] lossv Edem = 0.329
+Epoch 3 [IMPR] lossv Cons = 0.397
+Epoch 3 [----] lossv Atel = 0.534
+Epoch 3 [IMPR] lossv PlEf = 0.331
+Epoch 3 [----] loss = 0.484
+Training loss: 0.401, Valid loss: 0.484
+
+<<< Training & Evaluating (lat) >>>
+Initial valid loss (overall): 0.426
+Initial valid loss Card: 0.253
+Initial valid loss Edem: 0.368
+Initial valid loss Cons: 0.209
+Initial valid loss Atel: 0.548
+Initial valid loss PlEf: 0.751
+
+Epoch 1 [IMPR] lossv Card = 0.136
+Epoch 1 [IMPR] lossv Edem = 0.270
+Epoch 1 [IMPR] lossv Cons = 0.103
+Epoch 1 [IMPR] lossv Atel = 0.339
+Epoch 1 [IMPR] lossv PlEf = 0.389
+Epoch 1 [IMPR] loss = 0.247
+Training loss: 0.346, Valid loss: 0.247
+Epoch 2 [----] lossv Card = 0.157
+Epoch 2 [IMPR] lossv Edem = 0.244
+Epoch 2 [IMPR] lossv Cons = 0.099
+Epoch 2 [IMPR] lossv Atel = 0.337
+Epoch 2 [IMPR] lossv PlEf = 0.235
+Epoch 2 [IMPR] loss = 0.215
+Training loss: 0.329, Valid loss: 0.215
+Epoch 3 [----] lossv Card = 0.190
+Epoch 3 [----] lossv Edem = 0.279
+Epoch 3 [IMPR] lossv Cons = 0.093
+Epoch 3 [----] lossv Atel = 0.385
+Epoch 3 [----] lossv PlEf = 0.256
+Epoch 3 [----] loss = 0.240
+Training loss: 0.320, Valid loss: 0.240
+
+<<< Model Trained >>>
+For frontal model, m-epoch_2_frt.pth.tar is the best overall.
+For frontal Card, m-epoch_2_frt.pth.tar is the best.
+For frontal Edem, m-epoch_2_frt.pth.tar is the best.
+For frontal Cons, m-epoch_3_frt.pth.tar is the best.
+For frontal Atel, m-epoch_2_frt.pth.tar is the best.
+For frontal PlEf, m-epoch_3_frt.pth.tar is the best.
+
+For lateral model, m-epoch_2_lat.pth.tar is the best overall.
+For lateral Card, m-epoch_1_lat.pth.tar is the best.
+For lateral Edem, m-epoch_2_lat.pth.tar is the best.
+For lateral Cons, m-epoch_3_lat.pth.tar is the best.
+For lateral Atel, m-epoch_2_lat.pth.tar is the best.
+For lateral PlEf, m-epoch_2_lat.pth.tar is the best.
+
